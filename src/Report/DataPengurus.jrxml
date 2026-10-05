@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d030248-d2fe-484f-93c5-be24fe1a0029">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="40"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     data_pengurus.`id_pengurus` AS data_pengurus_id_pengurus,
+     data_pengurus.`nama_pengurus` AS data_pengurus_nama_pengurus,
+     data_pengurus.`jenis_kelamin` AS data_pengurus_jenis_kelamin,
+     data_pengurus.`no_hp` AS data_pengurus_no_hp,
+     data_pengurus.`alamat` AS data_pengurus_alamat,
+     data_pengurus.`jabatan` AS data_pengurus_jabatan,
+     data_pengurus.`wilayah_rt` AS data_pengurus_wilayah_rt,
+     data_pengurus.`wilayah_rw` AS data_pengurus_wilayah_rw,
+     data_pengurus.`mulai_menjabat` AS data_pengurus_mulai_menjabat,
+     data_pengurus.`selesai_menjabat` AS data_pengurus_selesai_menjabat
+FROM
+     `data_pengurus` data_pengurus]]>
+	</queryString>
+	<field name="data_pengurus_id_pengurus" class="java.lang.Integer"/>
+	<field name="data_pengurus_nama_pengurus" class="java.lang.String"/>
+	<field name="data_pengurus_jenis_kelamin" class="java.lang.String"/>
+	<field name="data_pengurus_no_hp" class="java.lang.String"/>
+	<field name="data_pengurus_alamat" class="java.lang.String"/>
+	<field name="data_pengurus_jabatan" class="java.lang.String"/>
+	<field name="data_pengurus_wilayah_rt" class="java.lang.String"/>
+	<field name="data_pengurus_wilayah_rw" class="java.lang.String"/>
+	<field name="data_pengurus_mulai_menjabat" class="java.sql.Date"/>
+	<field name="data_pengurus_selesai_menjabat" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="240" y="98" width="205" height="26" uuid="3a3bd76e-3bc6-4a68-b70c-bc390662526a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kota Tangerang, Banten 15144]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="155" width="555" height="1" uuid="5448efcb-5267-439f-b39b-aa177405040b"/>
+			</line>
+			<staticText>
+				<reportElement x="201" y="69" width="297" height="29" uuid="3c3e44ae-5488-4037-92d2-dfa874c83e76"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kelurahan Kunciran Indah Kecamatan Pinang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="31" width="387" height="38" uuid="94db46a2-9819-4e03-96df-9b0a9198f7c6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[RUKUN TETANGGA 005 RUKUN WARGA 005]]></text>
+			</staticText>
+			<image>
+				<reportElement x="1" y="20" width="129" height="116" uuid="8017287c-e02a-4fcc-ae5c-23eac5f80bda"/>
+				<imageExpression><![CDATA["D:\\Arfansyah saputra\\KelompokAn\\src\\Img\\Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="223" y="22" width="162" height="22" uuid="b419df5e-ed35-42df-962c-cf5ab38390ff"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Pengurus]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="0" width="100" height="20" uuid="c454df67-8bc9-4a0c-89e3-3a6a892cdeb4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Pengurus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="0" width="72" height="20" uuid="8b8d7745-9837-4b70-93a7-aef092eb55f3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="100" height="20" uuid="e523cc76-f44e-46d6-8218-c19274d1a843"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No Handphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="61" height="20" uuid="9e8f5189-f029-4eae-9683-b30a3439aba2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="0" width="89" height="20" uuid="fd0b46ed-d786-4e9a-b93e-10f233b54a23"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mulai Menjabat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="95" height="20" uuid="6f3e2c71-d61a-41b7-a38f-77b7f5728f4e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Selesai Menjabat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="18" y="0" width="100" height="20" uuid="672199b3-02ee-4c91-b2ae-9368a7a16a44"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_nama_pengurus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="0" width="72" height="20" uuid="f9bfd2db-d22a-475d-be18-13b9229d2d4c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="100" height="20" uuid="b0f810ae-a9cf-43de-a126-acdee5f9ead3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="61" height="20" uuid="d7309f19-1611-428a-a341-3c03f7aa4872"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="0" width="89" height="20" uuid="c2069b0d-04a9-47bd-87d0-d2bffd38aa3f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_mulai_menjabat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="95" height="20" uuid="c1566f5e-084d-4eb2-8d7a-c1d481c72b4f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_pengurus_selesai_menjabat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="348" y="14" width="54" height="18" uuid="da829216-39f9-4a2e-8984-8096f8434c83"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tangerang,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="98" width="89" height="20" uuid="a8b5d895-e4a7-4074-b284-6a7d68403b5b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ir, Purwono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="31" width="89" height="20" uuid="99c20b5f-8950-4d50-8731-f35533d9e5f0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ketua RT 005]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="402" y="14" width="153" height="18" uuid="852201cb-bdc5-4fe9-83dd-278f813ac211"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat(
+    "EEEE dd MMMM yyyy",
+    new java.util.Locale("id", "ID")
+).format(new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

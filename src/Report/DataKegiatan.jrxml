@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ef0c2c49-03d8-4e60-8b54-fb16e1f1f598">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     data_kegiatan.`id_kegiatan` AS data_kegiatan_id_kegiatan,
+     data_kegiatan.`id_pengurus` AS data_kegiatan_id_pengurus,
+     data_kegiatan.`nama_pengurus` AS data_kegiatan_nama_pengurus,
+     data_kegiatan.`id_fas` AS data_kegiatan_id_fas,
+     data_kegiatan.`nama_fas` AS data_kegiatan_nama_fas,
+     data_kegiatan.`nama_kegiatan` AS data_kegiatan_nama_kegiatan,
+     data_kegiatan.`jenis_kegiatan` AS data_kegiatan_jenis_kegiatan,
+     data_kegiatan.`tanggal_kegiatan` AS data_kegiatan_tanggal_kegiatan,
+     data_kegiatan.`jam` AS data_kegiatan_jam,
+     data_kegiatan.`jumlah_peserta` AS data_kegiatan_jumlah_peserta,
+     data_kegiatan.`status_k` AS data_kegiatan_status_k,
+     data_kegiatan.`Keterangan` AS data_kegiatan_Keterangan
+FROM
+     `data_kegiatan` data_kegiatan]]>
+	</queryString>
+	<field name="data_kegiatan_id_kegiatan" class="java.lang.Integer"/>
+	<field name="data_kegiatan_id_pengurus" class="java.lang.Integer"/>
+	<field name="data_kegiatan_nama_pengurus" class="java.lang.String"/>
+	<field name="data_kegiatan_id_fas" class="java.lang.Integer"/>
+	<field name="data_kegiatan_nama_fas" class="java.lang.String"/>
+	<field name="data_kegiatan_nama_kegiatan" class="java.lang.String"/>
+	<field name="data_kegiatan_jenis_kegiatan" class="java.lang.String"/>
+	<field name="data_kegiatan_tanggal_kegiatan" class="java.sql.Date"/>
+	<field name="data_kegiatan_jam" class="java.lang.String"/>
+	<field name="data_kegiatan_jumlah_peserta" class="java.lang.Integer"/>
+	<field name="data_kegiatan_status_k" class="java.lang.String"/>
+	<field name="data_kegiatan_Keterangan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="137" splitType="Stretch">
+			<staticText>
+				<reportElement x="249" y="88" width="205" height="26" uuid="57517884-286d-4473-a8c9-afcbdab56648"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kota Tangerang, Banten 15144]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="59" width="297" height="29" uuid="36d4f274-2eff-4169-97f7-08281e320359"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kelurahan Kunciran Indah Kecamatan Pinang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="21" width="387" height="38" uuid="9b9dadb4-caa4-4bde-9df1-affb1aa9b34c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[RUKUN TETANGGA 005 RUKUN WARGA 005]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="129" height="116" uuid="b22be905-4fc7-4c3e-8b0e-5ca000c26d2a"/>
+				<imageExpression><![CDATA["D:\\Arfansyah saputra\\KelompokAn\\src\\Img\\Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="193" y="12" width="162" height="22" uuid="5f7d3c04-db43-4780-a7e1-b1d9e8132ca5"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Kegiatan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="55292d42-4c40-48fe-82c9-3c1f90966d54"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="1" width="100" height="20" uuid="bd21b6c6-2bbb-45d2-8b8a-e90d8173f000"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Pengurus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="126" y="1" width="100" height="20" uuid="33d50254-2391-4228-acef-633e3094ea43"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Fasilitas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="1" width="100" height="20" uuid="8198020b-34d3-4c37-9fa6-b7a285c55972"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Kegiatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="1" width="100" height="20" uuid="31e4bdba-edc2-48f5-a4cd-32fb24d23ace"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tanggal Kegiatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="1" width="100" height="20" uuid="3ec4b50a-efc7-44c4-a363-0a130b361282"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="0" width="100" height="20" uuid="78525a21-3a3f-4ec8-9e5a-c667b8bd5b35"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kegiatan_nama_pengurus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="0" width="100" height="20" uuid="6422c7d6-04a8-470f-90d5-b211eedafaf7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kegiatan_nama_fas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="100" height="20" uuid="eae575c3-c2d8-413a-9fa0-7faf014ec726"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kegiatan_nama_kegiatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="100" height="20" uuid="30936ae5-cf36-47e8-8e8e-24179daa9377"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kegiatan_tanggal_kegiatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="100" height="20" uuid="f5c93f0e-a12c-40a7-9500-029f1bd7c5ca"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kegiatan_Keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="128" splitType="Stretch">
+			<staticText>
+				<reportElement x="403" y="33" width="89" height="20" uuid="daa18b55-86e2-4f93-a01b-a9e1c86878c7"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ketua RT 005]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="16" width="54" height="18" uuid="57a0ed3f-b1e2-48e3-9769-fb78e0e2b9c9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tangerang,]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="428" y="16" width="95" height="18" uuid="e5496080-75dc-4009-816c-e57fb59a4673"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat(
+    "EEEE, dd MMMM yyyy",
+    new java.util.Locale("id", "ID")
+).format(new Date())
+]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="403" y="100" width="89" height="20" uuid="d80730b7-5fd3-4727-a4e4-3a3bf91af811"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ir, Purwono]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

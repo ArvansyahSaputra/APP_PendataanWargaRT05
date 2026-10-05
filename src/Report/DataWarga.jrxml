@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ae3bdef6-3ce6-47b4-b4f6-f8fa10502271">
+	<property name="ireport.zoom" value="1.100000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="76"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     datawarga.`nik` AS datawarga_nik,
+     datawarga.`nama` AS datawarga_nama,
+     datawarga.`jk` AS datawarga_jk,
+     datawarga.`tl` AS datawarga_tl,
+     datawarga.`tg` AS datawarga_tg,
+     datawarga.`noTlp` AS datawarga_noTlp,
+     datawarga.`alamat` AS datawarga_alamat,
+     datawarga.`kwg` AS datawarga_kwg,
+     datawarga.`pendidikan` AS datawarga_pendidikan,
+     datawarga.`pekerjaan` AS datawarga_pekerjaan,
+     datawarga.`agama` AS datawarga_agama,
+     datawarga.`statusW` AS datawarga_statusW,
+     datawarga.`tglMasuk` AS datawarga_tglMasuk
+FROM
+     `datawarga` datawarga]]>
+	</queryString>
+	<field name="datawarga_nik" class="java.lang.String"/>
+	<field name="datawarga_nama" class="java.lang.String"/>
+	<field name="datawarga_jk" class="java.lang.String"/>
+	<field name="datawarga_tl" class="java.lang.String"/>
+	<field name="datawarga_tg" class="java.sql.Date"/>
+	<field name="datawarga_noTlp" class="java.lang.String"/>
+	<field name="datawarga_alamat" class="java.lang.String"/>
+	<field name="datawarga_kwg" class="java.lang.String"/>
+	<field name="datawarga_pendidikan" class="java.lang.String"/>
+	<field name="datawarga_pekerjaan" class="java.lang.String"/>
+	<field name="datawarga_agama" class="java.lang.String"/>
+	<field name="datawarga_statusW" class="java.lang.String"/>
+	<field name="datawarga_tglMasuk" class="java.sql.Date"/>
+	<variable name="datawarga_nik_1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{datawarga_nik}]]></variableExpression>
+	</variable>
+	<variable name="datawarga_nik_2" class="java.lang.Integer" resetType="Column" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{datawarga_nik}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="137" splitType="Stretch">
+			<image>
+				<reportElement x="19" y="0" width="129" height="116" uuid="a7329f5c-baad-4259-ae09-5c19d38163c5"/>
+				<imageExpression><![CDATA["D:\\Arfansyah saputra\\KelompokAn\\src\\Img\\Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="168" y="11" width="387" height="38" uuid="10e880a3-0765-4b97-a0ea-e1f7ad550072"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[RUKUN TETANGGA 005 RUKUN WARGA 005]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="219" y="49" width="297" height="29" uuid="6eeb875e-34a0-4db9-b1b9-518d246c7034"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kelurahan Kunciran Indah Kecamatan Pinang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="78" width="205" height="26" uuid="99597e71-b443-4766-af9c-7dd67a189a8d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kota Tangerang, Banten 15144]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="6407409f-67f3-4545-a319-2812d4f97a59"/>
+			</line>
+			<staticText>
+				<reportElement x="200" y="11" width="142" height="22" uuid="1c5be7ba-d3c7-4c71-93fc-5113a5bc427e"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Warga]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="27" y="0" width="100" height="20" uuid="fdb890fd-1b60-4289-acd7-cef6a02e11fd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="0" width="100" height="20" uuid="fcc2632c-fb75-466f-b98f-e3d72d0087bf"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="0" width="100" height="20" uuid="d9c50684-5ba8-4d08-a945-f16ec8dea4c6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="0" width="100" height="20" uuid="c1795171-dbcd-4874-b6eb-e201610d8625"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="100" height="20" uuid="0604769f-6d75-47a4-ad06-6344b97de52f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Agama]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="27" y="0" width="100" height="20" uuid="6af19903-0467-4932-b697-62c7d40134be"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datawarga_nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="0" width="100" height="20" uuid="a2e00f16-a4cc-4721-9373-f18173d77543"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datawarga_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="100" height="20" uuid="b43a8ef5-5f25-4ee5-9e06-87761f2a3a7f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datawarga_jk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="0" width="100" height="20" uuid="eb3c3001-befc-435d-bbdc-eebbd323d994"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datawarga_noTlp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="100" height="20" uuid="294be427-2e91-42a1-88af-707ec32473eb"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datawarga_agama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="124" splitType="Stretch">
+			<staticText>
+				<reportElement x="348" y="19" width="54" height="18" uuid="af0dff78-6a3f-40af-893a-ee6396377293"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tangerang,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="36" width="89" height="20" uuid="b5a13189-0854-44c9-8c94-5d93c7b51774"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ketua RT 005]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="402" y="19" width="153" height="18" uuid="4fb44300-78ab-4425-a2b3-09e34f8596e6"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat(
+    "EEEE dd MMMM yyyy",
+    new java.util.Locale("id", "ID")
+).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="103" width="89" height="20" uuid="445641d2-1904-497e-845e-5200cfc2a334"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Ir, Purwono]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="81" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="33" splitType="Stretch"/>
+	</summary>
+</jasperReport>
